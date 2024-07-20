@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DMBS</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            background-image: url();
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+    <style>
+        body {
+            height: 100vh;
+        }
+
+        .container {
+            height: 100%;
+        }
+    </style>
+    <div class="container d-flex align-items-center justify-content-center flex-column">
+        <h1 class="row text-center">EMPLOYEE MANAGEMENT SYSTEM</h1>
+        <h3>Here you can perform the operations</h3>
+        <div class="row">
+            <button class="col btn btn-lg m-3 px-3 btn-primary" onclick="changeLocation('insertForm.html')">Insert</button>
+            <button class="col btn btn-lg m-3 px-3 btn-secondary"
+                onclick="changeLocation('http://localhost:3001/select')">View</button>
+            <button class="col btn btn-lg m-3 px-3 btn-warning" onclick="changeLocation('updateForm.html')">Update</button>
+            <button class="col btn btn-lg m-3 px-3 btn-danger" onclick="changeLocation('deleteForm.html')">Delete</button>
+        </div>
+    </div>
+
+
+    <script>
+        function changeLocation(location) {
+            console.log(location);
+            window.location.href = location;
+        }
+    </script>
+
+</body>
+
+</html>
